@@ -23,3 +23,21 @@ element {
   transform: rotate3d(1, 1, 1, 45deg);
 }
 ```
+### Translate
+```css
+  wrapper {
+    /* Use this to translateZ */
+    perspective: 200px;
+    /* perspective-origin: x y -> (top, bottom, left. right) */
+    perspective-origin: top right;
+  }
+
+  element {
+    /* transform: translate(-100px, 100px) -> translate(x, y)*/
+    /* transform: translateX(100px); */
+    /* transform: translateY(100px); */
+    /* transform: translateZ(100px); */
+    /* transform: translate3d(x, y, z); */
+    transform: translate3d(100px, 100px, 100px);
+  }
+```
