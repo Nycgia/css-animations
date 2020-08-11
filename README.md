@@ -41,3 +41,12 @@ element {
     transform: translate3d(100px, 100px, 100px);
   }
 ```
+### Scale
+```css
+  element {
+    /* transform: scale(x, y || (xy)) */
+    /* transform: scale(2); */
+    /* 0 = 0%, .5 = 50%, 1 = 100%, 2 = 200% */
+    transform: scale(2);
+  }
+```
