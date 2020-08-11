@@ -50,3 +50,12 @@ element {
     transform: scale(2);
   }
 ```
+### Skew
+```css
+  element {
+    /* transform: skewX(45deg); */
+    /* transform: skewY(45deg); */
+    /* transform: skew(x, y); */
+    transform: skew(20deg, 20deg);
+  }
+```
