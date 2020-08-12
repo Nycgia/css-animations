@@ -59,3 +59,10 @@ element {
     transform: skew(20deg, 20deg);
   }
 ```
+### Transform Origin
+```css
+  element {
+    /* transform-origin: x y; -> (top, bottom, right, left)*/
+    transform-origin: top left;
+  }
+```
