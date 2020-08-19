@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation Sintax</title>
+  <style>
+    body {
+    }
+
+    .wrapper {
+      border: 1px solid red;
+      position: relative;
+      height: 100px;
+      width: 100px;
+      margin: 30vh auto;
+      /* Options */
+    }
+
+    .ball {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      /* transition: .5s; */
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-family: Arial;
+      background-color: red;
+
+      animation-name: pelota;
+      animation-duration: 2s;
+      /* animation-delay: 1s; */
+      animation-iteration-count: infinite;
+      /* animation-timing-function: cubic-bezier(1, 1, 1, 1); */
+      /* animation-direction: alternate-reverse; */
+      /* animation-fill-mode: forwards; */
+
+    }
+
+    @keyframes pelota {
+      0% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    .wrapper:hover .ball {
+      animation-play-state: paused;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="ball">Hello</div>
+  </div>
+</body>
+</html>
