@@ -31,8 +31,8 @@
       background-color: red;
       position: relative;
 
-      animation-name: pelota;
-      animation-duration: 2s;
+      animation-name: pelota, rebote;
+      animation-duration: 2s, .3s;
       /* animation-delay: 1s; */
       animation-iteration-count: infinite;
       animation-direction: alternate;
@@ -40,9 +40,10 @@
       /* animation-timing-function: cubic-bezier(1, 1, 1, 1); */
       /* animation-timing-function: ease-in; */
       /* animation-timing-function: steps(10); */
+      animation-timing-function: linear, ease-in-out;
 
       /* cubic-bezier() */
-      animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+      /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
     }
 
     @keyframes pelota {
@@ -52,6 +53,16 @@
 
       100% {
         left: calc(100% - 100px);
+      }
+    }
+
+    @keyframes rebote {
+      from {
+        transform: translateY(0);
+      }
+
+      to {
+        transform: translateY(100px);
       }
     }
 
